@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Pradeen Krishna" />
+    <meta name="discription" content="This is a survey form" />
+    <title>A survey form</title>
+  </head>
+
+  <body>
+    <h1>Survey Form</h1>
+    <br />
+
+    <form action="">
+      <fieldset>
+        <legend>Survey</legend>
+        <label for="firstName">First name</label> <br />
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="Mike"
+          autocomplete="on"
+          required
+          autofocus
+        /><br /><br />
+        <label for="lastName">Last name</label><br />
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          placeholder="Zander"
+          autocomplete="on"
+          required
+          autofocus
+        />
+
+        <p>Would you recommend this survey to others?</p>
+
+        <input type="radio" id="yes" value="Yes" name="option" />
+        <label for="yes">Yes</label> <br /><br />
+
+        <input type="radio" id="no" value="No" name="option" />
+        <label for="no">No</label><br /><br />
+
+        <input type="radio" id="maybe" value="Maybe" name="option" />
+        <label for="maybe">Maybe</label>
+
+        <div>
+          <br /><label for="role">Which option best describe you?</label><br />
+          <br /><select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="other">Others</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="Languages you know">Languages you know</label><br /><br />
+          <input type="checkbox" name="language" id="C++" />
+          <label for="C++">C++</label>
+
+          <input type="checkbox" name="language" id="Python" />
+          <label for="Python">Python</label>
+
+          <input type="checkbox" name="language" id="Java" />
+          <label for="Java">Java</label>
+
+          <input type="checkbox" name="language" id="C" />
+          <label for="C">C</label>
+        </div>
+        <br />
+        <label for="formessage">Any comments or suggestions</label><br /><br />
+        <textarea
+          name="message"
+          id="formessage"
+          cols="30"
+          rows="10"
+          placeholder="type your message here"
+        ></textarea>
+      </fieldset>
+
+      <br />
+      <button type="submit">Sumbit</button>
+      <button type="reset">Reset</button>
+    </form>
+    <hr />
+    <br /><br />
+    &lt;&lt;&lt;&copy;Pradeen Krishna&gt;&gt;&gt;
+  </body>
+</html>
